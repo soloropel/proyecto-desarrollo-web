@@ -1,0 +1,90 @@
+@font-face {
+    font-family: typograph-pro-semibold;
+    src: url(../fonts/typograph-pro-semi-bold.ttf);
+}
+@font-face {
+    font-family: quicksand;
+    src: url(../fonts/quicksand-regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2%;
+}
+
+#img1{
+    height: 8em;
+    width: auto;
+}
+
+.box-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul#header-menu {
+    float: right;
+  }
+
+  ul #header-menu li {
+    display: inline;
+}
+
+.nav-link{
+    color:#171a1e;
+    font-family: quicksand;
+    font-size: large;
+    font-weight: 500;
+    height: 2rem;
+}
+
+#line-bottom-navbar{
+    border: solid;
+    border-color: #886546;
+}
+
+#line-top-footer{
+    border: solid;
+    border-color: #886546;
+    width: 100%;
+}
+
+.box-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .menu-footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .menu-footer a {
+    text-decoration: none;
+    color: #171a1e;
+  }
+  
+  .menu-footer a:hover {
+    color: #007bff;
+  }
+  
+  #menu-nav {
+    margin-right: 0%;
+  }
+  
+  #social-links {
+    margin-left: 0%;
+  }
+

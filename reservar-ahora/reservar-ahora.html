@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservar-ahora</title>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../assets/css/reservar-ahora.css"></link>
+</head>
+<body>
+    <header class="box-1">
+        <img id="img1" src="../assets/img/logo.png" alt="logo El Sueño"> 
+            <ul id="header-menu" class="menu-navigation nav">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="../cabañas/cabañas.html" class="nav-link">Cabañas</a></li>
+                <li class="nav-item"><a href="../quincho/quincho.html" class="nav-link">Quincho</a></li>
+                <li class="nav-item"><a href="../contacto/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+    </header>
+    
+    <hr id="line-bottom-navbar"> 
+
+<body>
+    <h1>Reservar ahora</h1>
+    <p>Para solicitar tu reserva ahora, completa el siguiente formulario:</p>
+  
+    <form action="ruta-de-accion-del-formulario" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+  
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="celular">Celular:</label>
+      <input type="tel" id="celular" name="celular" required>
+  
+      <label for="fecha-llegada">Fecha de llegada:</label>
+      <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+  
+      <label for="fecha-salida">Fecha de salida:</label>
+      <input type="date" id="fecha-salida" name="fecha-salida" required>
+  
+      <label for="mensaje">Déjanos un mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+  
+      <button type="submit">Enviar</button>
+    </form>    
+
+    <hr id="line-top-footer"> 
+    
+    <footer class="box-2">
+        <nav>
+            <ul id="menu-nav" class="menu-footer">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../cabañas/cabañas.html">Cabañas</a></li>
+                <li><a href="../quincho/quincho.html">Quincho</a></li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+        <ul id="social-links" class="menu-footer">
+            <li><a href="https://www.whatsapp.com/?lang=es" target="_blank">Whatsapp</a></li>
+            <li><a href="https://www.instagram.com/elsueno_mendoza/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Mail</a></li>
+        </ul>
+        </nav>
+    </footer>
+      
+</body>
+</html>
