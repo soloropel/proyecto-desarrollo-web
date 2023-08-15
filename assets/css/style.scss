@@ -1,0 +1,192 @@
+@font-face {
+  font-family: typograph-pro-semibold;
+  src: url(../fonts/typograph-pro-semi-bold.ttf);
+}
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/quicksand-regular.ttf);
+}
+// Definición de variables
+$primary-color: #886546;
+$secondary-color: #171a1e;
+$highlight-color: #007bff;
+
+// Mixin para botones
+@mixin button-style($text-color: $primary-color) {
+  font-family: quicksand;
+  text-decoration: none;
+  font-size: large;
+  color: azure;
+  background-color: $primary-color;
+  width: 12rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  a {
+    color: white; 
+  }
+}
+
+// Mixin para bordes
+@mixin border($color) {
+  border: solid;
+  border-color: $color;
+}
+
+// Estilos globales
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2%;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content:space-between
+}
+
+.header-menu {
+  float: right;
+
+  .menu-item {
+    display: inline;
+  }
+}
+
+.menu-link {
+  font-family: quicksand;
+  text-decoration: none;
+  margin: 0 1rem;
+  color: $secondary-color;
+  font-size: large;
+  font-weight: 500;
+  height: 2rem;
+}
+
+#logo-img{
+    height: 8em;
+    width: auto;
+}
+
+.divider {
+  @include border($primary-color);
+}
+
+.section-title {
+  font-family: typograph-pro-semibold;
+  color: $primary-color;
+  font-size: xx-large;
+}
+
+p {
+  color: $secondary-color;
+  font-family: quicksand;
+  font-size: large;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 1rem;
+  position: relative;
+
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    border: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include button-style($primary-color);
+}
+
+.line-top-footer {
+  @include border($primary-color);
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+  font-family: "quicksand", sans-serif;
+  padding: 10px 20px;
+
+  .footer-menu {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+  .social-links {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-size: large;
+      font-weight: 500;
+  
+      &:hover {
+        color: $highlight-color;
+      }
+    }
+  }
+  
+}
+
+//Media queries Index
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+

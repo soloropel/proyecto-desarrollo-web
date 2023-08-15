@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <meta name="description" content="Cabañas de montaña El Sueño en Mendoza, Argentina">
+    <meta name="keywords" content="cabañas, quincho, montaña, mendoza, argentina, vacaciones, alojamiento">
+    <title>Quincho</title>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../assets/css/style.css"></link>
 </head>
 <body>
-    <header>
-        <img src="../assets/img/logo.png"
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../cabañas/cabañas.html">Cabañas</a></li>
-                <li><a href="../quincho/quincho.html">Quincho</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header-box">
+        <img id="logo-img" src="../assets/img/logo.png" alt="Logo El Sueño"> 
+        <ul class="header-menu nav">
+            <li class="menu-item"><a href="../index.html" class="menu-link">Inicio</a></li>
+            <li class="menu-item"><a href="../cabañas/cabañas.html" class="menu-link">Cabañas</a></li>
+            <li class="menu-item"><a href="../quincho/quincho.html" class="menu-link">Quincho</a></li>
+            <li class="menu-item"><a href="../contacto/contacto.html" class="menu-link">Contacto</a></li>
+        </ul>
     </header>
+    
+    <hr class="divider"> 
 
-<h1>Contacto</h1>
+<h1 class="section-title">Contacto</h1>
 
 <section>
     <p>Dirección: Lorem ipsum</p>
@@ -26,8 +31,8 @@
      <p>Email: lorem@ipsum</p>
 </section>
 
-  <h2>Formulario de contacto</h2>
-  <form action="ruta-de-accion-del-formulario" method="POST">
+<h2 class="section-title">Formulario de contacto</h2>
+  <form class="contact-form" action="ruta-de-accion-del-formulario" method="POST">
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
 
@@ -46,21 +51,25 @@
     <button type="submit">Enviar</button>
   </form>
 
-  <footer>
+  <hr id="line-top-footer"> 
+
+  <footer class="footer-box">
     <nav>
-        <ul>
+        <ul class="footer-menu">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../cabañas/cabañas.html">Cabañas</a></li>
             <li><a href="../quincho/quincho.html">Quincho</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <div class="social links">
-        <a href="https://www.whatsapp.com/?lang=es" target="_blank">Whatsapp</a>
-        <a href="https://www.instagram.com/elsueno_mendoza/" target="_blank">Instagram</a>
-        <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Mail</a>
-    </div>
-  </footer>
+    <nav>
+        <ul class="social-links">
+            <li><a href="../https://www.whatsapp.com/?lang=es" target="_blank">Whatsapp</a></li>
+            <li><a href="../https://www.instagram.com/elsueno_mendoza/" target="_blank">Instagram</a></li>
+            <li><a href="../https://www.google.com/intl/es-419/gmail/about/" target="_blank">Mail</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
 </html>
