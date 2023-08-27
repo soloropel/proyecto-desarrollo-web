@@ -51,6 +51,7 @@ body {
   font-family: typograph-pro-semibold;
   color: #886546;
   font-size: xx-large;
+  margin-top: 2%;
 }
 
 p {
@@ -100,6 +101,7 @@ p {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 150px;
 }
 .primary-button:hover {
   background-color: #664c35;
@@ -156,10 +158,112 @@ p {
   color: #007bff;
 }
 
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.form1 .contact-form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+.form1 .contact-form label {
+  font-family: quicksand;
+  color: #171a1e;
+  font-size: large;
+  display: block;
+  margin-bottom: 6px;
+}
+.form1 .contact-form input[type=text],
+.form1 .contact-form input[type=email],
+.form1 .contact-form input[type=tel],
+.form1 .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #886546;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form1 .contact-form textarea {
+  resize: vertical;
+}
+.form1 .contact-form button[type=submit] {
+  background-color: #886546;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form1 .contact-form button[type=submit]:hover {
+  background-color: #664c35;
+}
+
+.other-contact {
+  margin-top: 2%;
+  margin-bottom: 150px;
+}
+
+.form2 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 80%;
+}
+.form2 label {
+  font-family: quicksand;
+  color: #171a1e;
+  font-size: large;
+  display: block;
+  margin-bottom: 6px;
+}
+.form2 form input[type=text],
+.form2 form input[type=email],
+.form2 form input[type=tel],
+.form2 form input[type=date],
+.form2 form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #886546;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form2 form textarea {
+  resize: vertical;
+}
+.form2 form button[type=submit] {
+  background-color: #886546;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form2 form button[type=submit]:hover {
+  background-color: #664c35;
+}
+
 @media (max-width: 768px) {
   .image-gallery {
     flex-direction: column;
     row-gap: 1rem;
+  }
+  .header-menu {
+    float: right;
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cabañas de montaña El Sueño en Mendoza, Argentina">
+        <meta name="description" content="Cabañas de montaña El Sueño en Mendoza, Argentina">
     <meta name="keywords" content="cabañas, quincho, montaña, mendoza, argentina, vacaciones, alojamiento">
     <title>Quincho</title>
     <script src="./assets/js/bootstrap.min.js"></script>
@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header-box">
-        <img id="logo-img" src="../assets/img/logo.png" alt="Logo El Sueño"> 
+        <a href="../index.html"> <img id="logo-img" src="../assets/img/logo.png" alt="Logo El Sueño"> </a>
         <ul class="header-menu nav">
             <li class="menu-item"><a href="../index.html" class="menu-link">Inicio</a></li>
             <li class="menu-item"><a href="../cabañas/cabañas.html" class="menu-link">Cabañas</a></li>
@@ -23,34 +23,35 @@
     
     <hr class="divider"> 
 
-<body>
     <h1 class="section-title">Reservar ahora</h1>
     <p>Para solicitar tu reserva ahora, completa el siguiente formulario:</p>
   
+    <section class="form2" id="reserve-form">
     <form action="ruta-de-accion-del-formulario" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-  
-      <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="celular">Celular:</label>
-      <input type="tel" id="celular" name="celular" required>
-  
-      <label for="fecha-llegada">Fecha de llegada:</label>
-      <input type="date" id="fecha-llegada" name="fecha-llegada" required>
-  
-      <label for="fecha-salida">Fecha de salida:</label>
-      <input type="date" id="fecha-salida" name="fecha-salida" required>
-  
-      <label for="mensaje">Déjanos un mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-  
-      <button type="submit">Enviar</button>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+    
+        <label for="fecha-llegada">Fecha de llegada:</label>
+        <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+    
+        <label for="fecha-salida">Fecha de salida:</label>
+        <input type="date" id="fecha-salida" name="fecha-salida" required>
+    
+        <label for="mensaje">Dejanos un mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+        <button type="submit">Enviar</button>
     </form>    
+    </section>
 
     <hr id="line-top-footer"> 
 
